@@ -1,6 +1,5 @@
 import { useState } from "react"
 
-
 function App() {
   const [count,setcount]= useState(0);
   
@@ -9,16 +8,16 @@ function App() {
     <Count count={count} setcount={setcount}/>
     {/* <Buttons count={count} setcount={setcount}/> */}
     </div>
-  )
+   )
   // to put buttons in count you need to pass setcount as a prop even tough it 
   // does not need it 
-}
+ }
 
 function Count({count,setcount}){
 return <div>
   {count}
   <Buttons count={count} setcount={setcount}/>
-</div>
+      </div>
 }
 // count acted as a mediator
 // here count is taking set count and passing it down to buttons 
